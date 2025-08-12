@@ -10,3 +10,11 @@ for i in l:
         
 sorted_by_value_desc = dict(sorted(d.items(), key=lambda item: item[1], reverse=True))
 print(sorted_by_value_desc)
+
+l = ["cat", "dog", "cat", "bird", "dog", "cat",67,67] # can also count numbers
+d = {}
+
+for i in l:
+    d[i] = l.count(i)  # count how many times each word appears
+
+print(d)
